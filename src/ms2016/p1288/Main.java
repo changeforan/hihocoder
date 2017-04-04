@@ -1,12 +1,12 @@
-package ms2016;
+package ms2016.p1288;
 
-import java.util.Map;
+
 import java.util.Scanner;
 
 /**
  * Created by changsheng on 2017/3/30.
  */
-public class p1 {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int tasks = sc.nextInt();
@@ -38,17 +38,17 @@ public class p1 {
             chsCount = chsCount + tmp;
         }
 
-        int size = (int) Math.floor(Math.sqrt(w * h * p / chsCount));
+        int size = (int) Math.floor(Math.sqrt(w * h * p / (double) chsCount));
         while (size > 0) {
-            int width = (int) Math.floor(w / size);
-            int height = (int) Math.floor(h / size);
+            int width = (int) Math.floor(w /  (double) size);
+            int height = (int) Math.floor(h / (double) size);
             int pagesUsed = 0;
             int line = 0;
             if (width * height > 0) {
                 for (int tmp : a) {
-                    line += (int) Math.ceil(tmp / width);
+                    line += (int) Math.ceil(tmp /(double) width);
                 }
-                pagesUsed = (int) Math.ceil(line / height);
+                pagesUsed = (int) Math.ceil(line / (double) height);
                 if (pagesUsed <= p) {
                     break;
                 }

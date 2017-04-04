@@ -1,4 +1,4 @@
-package ms2016;
+package ms2016.p1290;
 
 import java.util.Scanner;
 
@@ -42,7 +42,7 @@ class Status {
     }
 }
 
-public class p3 {
+public class Main {
     private static int min = 0;
     private static char[][] map = null;
     private static int N, M;

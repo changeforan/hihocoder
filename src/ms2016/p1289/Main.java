@@ -1,4 +1,4 @@
-package ms2016;
+package ms2016.p1289;
 
 import java.util.Scanner;
 
@@ -65,7 +65,7 @@ class Tuple {
     }
 }
 
-public class p2 {
+public class Main {
     public static void main(String[] args) {
 
 
